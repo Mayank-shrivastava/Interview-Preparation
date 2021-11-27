@@ -2,7 +2,8 @@ package CB_Assignments.recursion;
 
 import java.util.*;
 
-public class DictionaryLarger {
+public class DictionarySmaller {
+    
     public static void main(String args[]) {
         // Your Code Here
 		Scanner scn = new Scanner(System.in);
@@ -20,7 +21,7 @@ public class DictionaryLarger {
                 break;
             }
         }
-        for(int i = idx+1; i < list.size(); i++) {
+        for(int i = 0; i < idx; i++) {
 			System.out.println(list.get(i));
 		}
 		scn.close();
@@ -38,4 +39,5 @@ public class DictionaryLarger {
 			getAllPermutations(ques.substring(0,i) + ques.substring(i+1), list, ans + ithchar);
 		}
 	}
+    
 }
